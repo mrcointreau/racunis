@@ -1,0 +1,55 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>Racunis</title><meta name="description" content="Documentation for Racunis"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><link rel="stylesheet" href="assets/custom.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script><link rel="icon" href="favicon.svg" />
+</head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">Racunis</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><h2>Racunis</h2></div><div class="tsd-panel tsd-typography"><p align='center'>
+  <img src='https://github.com/mrcointreau/racunis/raw/main/assets/logo.svg' alt='Racunis Logo' width='200' height='200'>
+</p>
+
+<a id="md:racunis" class="tsd-anchor"></a><h1><a href="#md:racunis">Racunis</a></h1><p><a href="https://github.com/mrcointreau/racunis/actions/workflows/ci.yaml"><img src="https://github.com/mrcointreau/racunis/actions/workflows/ci.yaml/badge.svg" alt="ci"></a></p>
+<p>Racunis is a comprehensive solution for queue management, offering robust and flexible job queueing systems designed to work with various databases. It provides core abstractions and specific implementations to facilitate easy management of background tasks in Node.js applications.</p>
+<a id="md:overview" class="tsd-anchor"></a><h2><a href="#md:overview">Overview</a></h2><p>Racunis is designed to simplify and enhance the process of managing job queues, ensuring reliable and efficient task execution. This repository contains multiple packages, each serving a distinct purpose within the overall system. By using Racunis, developers can focus on defining and processing their jobs without worrying about the underlying complexities of database operations.</p>
+<a id="md:packages" class="tsd-anchor"></a><h2><a href="#md:packages">Packages</a></h2><a id="md:racuniscore" class="tsd-anchor"></a><h3><a href="#md:racuniscore">@racunis/core</a></h3><p><code>@racunis/core</code> is the foundational package of the Racunis system. It provides abstract classes and error handling for creating and managing job queues, workers, and database pools. This package defines the core interfaces and base functionality that other packages extend and implement.</p>
+<p>For more details, see the package <a href="https://mrcointreau.github.io/racunis/modules/_racunis_core.html">documentation</a>.</p>
+<a id="md:racunismysql" class="tsd-anchor"></a><h3><a href="#md:racunismysql">@racunis/mysql</a></h3><p><code>@racunis/mysql</code> provides MySQL-specific implementations of the core abstractions defined in <code>@racunis/core</code>. It facilitates integration with MySQL databases, offering a straightforward way to manage background tasks in applications that use MySQL.</p>
+<p>For more details, see the package <a href="https://mrcointreau.github.io/racunis/modules/_racunis_mysql.html">documentation</a>.</p>
+<a id="md:racunispostgresql" class="tsd-anchor"></a><h3><a href="#md:racunispostgresql">@racunis/postgresql</a></h3><p><code>@racunis/postgresql</code> provides PostgreSQL-specific implementations of the core abstractions defined in <code>@racunis/core</code>. It allows for seamless integration with PostgreSQL databases, making it easy to manage background tasks in applications that use PostgreSQL.</p>
+<p>For more details, see the package <a href="https://mrcointreau.github.io/racunis/modules/_racunis_postgresql.html">documentation</a>.</p>
+<a id="md:contributing" class="tsd-anchor"></a><h2><a href="#md:contributing">Contributing</a></h2><p>I appreciate your interest in contributing! Please see the <a href="https://github.com/mrcointreau/racunis/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> file for guidelines on how to contribute.</p>
+<a id="md:license" class="tsd-anchor"></a><h2><a href="#md:license">License</a></h2><p>Racunis is licensed under the MIT License. See the <a href="https://github.com/mrcointreau/racunis/blob/main/LICENSE">LICENSE</a> file for more details.</p>
+</div></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-index-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><h4 class="uppercase">Member Visibility</h4><form><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div><div class="tsd-theme-toggle"><h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-index-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#md:racunis"><span>Racunis</span></a><ul><li><a href="#md:overview"><span>Overview</span></a></li><li><a href="#md:packages"><span>Packages</span></a></li><li><ul><li><a href="#md:racuniscore"><span>@racunis/core</span></a></li><li><a href="#md:racunismysql"><span>@racunis/mysql</span></a></li><li><a href="#md:racunispostgresql"><span>@racunis/postgresql</span></a></li></ul></li><li><a href="#md:contributing"><span>Contributing</span></a></li><li><a href="#md:license"><span>License</span></a></li></ul></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="index.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="assets/icons.svg#icon-1"></use></svg><span>Racunis</span></a><ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="."><li>Loading...</li></ul></nav></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a><br>
+            <span id="generation-date"></span>
+            <script>
+                window.GENERATION_DATE = 1716028590481;
+
+                (() => {
+                    
+        const formatter = new Intl.RelativeTimeFormat('en', {
+            numeric: 'auto',
+            style: 'short',
+        });
+
+        const divisions = [
+            { amount: 60, name: 'seconds' },
+            { amount: 60, name: 'minutes' },
+            { amount: 24, name: 'hours' },
+            { amount: 7, name: 'days' },
+            { amount: 4.34524, name: 'weeks' },
+            { amount: 12, name: 'months' },
+            { amount: Number.POSITIVE_INFINITY, name: 'years' }
+        ];
+
+        function formatTimeAgo(date) {
+            let duration = (date - new Date()) / 1000;
+            
+            for (const division of divisions) {
+                if (Math.abs(duration) < division.amount) {
+                    return formatter.format(Math.round(duration), division.name);
+                }
+                duration /= division.amount;
+            }
+        }
+
+        document.getElementById('generation-date').title = new Date(window.GENERATION_DATE).toLocaleString();
+        document.getElementById('generation-date').innerText = `Last modified ${formatTimeAgo(window.GENERATION_DATE)}`;
+    
+                })();
+            </script>
+        </p></footer><div class="overlay"></div></body></html>
