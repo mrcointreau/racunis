@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "noEmit": true,
+    "noImplicitThis": true,
+    "outDir": "dist",
+    "paths": {
+      "@racunis/core": [
+        "packages/core/src"
+      ],
+      "@racunis/core/test-utils": [
+        "packages/core/src/test-utils"
+      ],
+      "@racunis/mysql": [
+        "packages/mysql/src"
+      ],
+      "@racunis/postgresql": [
+        "packages/postgresql/src"
+      ],
+    },
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ESNext",
+    "types": [
+      "@types/node"
+    ],
+    "useDefineForClassFields": true
+  },
+  "include": [
+    "./**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/dist/**"
+  ]
+}

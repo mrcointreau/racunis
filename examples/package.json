@@ -1,0 +1,9 @@
+{
+  "name": "examples",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "mysql": "../docker_service_runner.sh mysql 'tsx mysql.ts'",
+    "postgresql": "../docker_service_runner.sh postgresql 'tsx postgresql.ts'"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@racunis/core",
+  "type": "module",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrcointreau/racunis.git",
+    "directory": "packages/core"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.esm.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./test-utils": {
+      "require": "./dist/test-utils.cjs.js",
+      "import": "./dist/test-utils.esm.js",
+      "types": "./dist/test-utils.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "NODE_ENV=production rollup -c",
+    "dev": "NODE_ENV=development rollup -c -w",
+    "test": "vitest run --coverage"
+  }
+}

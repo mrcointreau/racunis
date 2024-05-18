@@ -1,0 +1,37 @@
+services:
+  mysql:
+    image: mysql:8.0
+    restart: always
+    ports:
+      - "${MYSQL_PORT}:3306"
+    environment:
+      MYSQL_DATABASE: $DATABASE_NAME
+      MYSQL_USER: $DATABASE_USER
+      MYSQL_PASSWORD: $DATABASE_PASSWORD
+      MYSQL_ROOT_PASSWORD: $DATABASE_PASSWORD
+    volumes:
+      - .mysql:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 2s
+      retries: 10
+      start_period: 5s
+
+  postgresql:
+    image: postgres:15-bullseye
+    restart: always
+    ports:
+      - "${POSTGRESQL_PORT}:5432"
+    environment:
+      POSTGRES_DB: $DATABASE_NAME
+      POSTGRES_PASSWORD: $DATABASE_PASSWORD
+      POSTGRES_USER: $DATABASE_USER
+    volumes:
+      - .db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 2s
+      retries: 10
+      start_period: 5s

@@ -1,0 +1,13 @@
+{
+  "name": "Racunis",
+  "plugin": [
+    "typedoc-plugin-extras"
+  ],
+  "entryPointStrategy": "packages",
+  "entryPoints": [
+    "packages/*"
+  ],
+  "customCss": "./typedoc/style.css",
+  "favicon": "typedoc/favicon.svg",
+  "footerLastModified": true
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@racunis/mysql",
+  "type": "module",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrcointreau/racunis.git",
+    "directory": "packages/mysql"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.esm.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "NODE_ENV=production rollup -c",
+    "dev": "NODE_ENV=development rollup -c -w",
+    "test": "../../docker_service_runner.sh mysql 'vitest run --coverage'"
+  },
+  "dependencies": {
+    "@racunis/core": "1.0.0"
+  },
+  "peerDependencies": {
+    "mysql2": "^3.9.6"
+  }
+}

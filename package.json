@@ -1,0 +1,47 @@
+{
+  "name": "racunis",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "prebuild": "rm -rf packages/*/dist",
+    "build": "npm run build -w packages",
+    "dev": "npm run dev -w packages",
+    "lint": "tsc && eslint .",
+    "lint:fix": "tsc && eslint . --fix",
+    "test": "npm run test -w packages",
+    "docs": "typedoc --options typedoc.json"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-conventional": "19.2.2",
+    "@mrcointreau/eslint-config-typescript": "1.0.10",
+    "@rollup/plugin-terser": "0.4.4",
+    "@rollup/plugin-typescript": "11.1.6",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "@types/node": "20.12.12",
+    "@types/uuid": "9.0.8",
+    "@vitest/coverage-v8": "1.6.0",
+    "dotenv": "16.4.5",
+    "esbuild": "0.21.3",
+    "eslint": "8.57.0",
+    "husky": "9.0.11",
+    "rollup": "4.17.2",
+    "rollup-plugin-dts": "6.1.0",
+    "rollup-plugin-esbuild": "6.1.1",
+    "semantic-release": "23.1.1",
+    "semantic-release-monorepo": "8.0.2",
+    "tslib": "2.6.2",
+    "tsx": "4.10.4",
+    "typedoc": "0.25.13",
+    "typedoc-plugin-extras": "3.0.0",
+    "typescript": "5.3.3",
+    "uuid": "9.0.1",
+    "vite-tsconfig-paths": "4.3.2",
+    "vitest": "1.6.0"
+  }
+}

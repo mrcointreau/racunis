@@ -1,0 +1,10 @@
+#tsd-search a.title::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin: -3px 8px 0 0;
+  background: url('../../assets/logo.svg') no-repeat center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
