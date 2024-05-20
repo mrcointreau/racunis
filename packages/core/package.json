@@ -1,6 +1,11 @@
 {
   "name": "@racunis/core",
-  "type": "module",
+  "description": "A TypeScript-based, robust, and flexible framework for queue management, providing a foundation for implementing database-based job queues. This package includes abstract classes and error handling for creating and managing job queues, workers, and database pools.",
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "queue"
+  ],
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -10,6 +15,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
