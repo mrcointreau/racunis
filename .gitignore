@@ -3,7 +3,7 @@
 .mysql
 
 # Documentation
-/docs
+docs
 
 # Logs
 logs
