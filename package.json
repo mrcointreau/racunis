@@ -36,7 +36,7 @@
     "semantic-release": "23.1.1",
     "semantic-release-monorepo": "8.0.2",
     "tslib": "2.6.2",
-    "tsx": "4.11.0",
+    "tsx": "4.11.2",
     "typedoc": "0.25.13",
     "typedoc-plugin-extras": "3.0.0",
     "typescript": "5.3.3",
